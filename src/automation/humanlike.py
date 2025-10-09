@@ -506,7 +506,7 @@ class HumanlikeBehavior:
         try:
             prompt = (
                 f"你是一个论坛用户，请基于帖子标题写一条简短自然的中文评论"
-                f"要求是语气积极一点，可以是鼓励与惊讶 \n标题：{title}"
+                f"要求是语气积极一点，不能提出建议，可以是夸奖 \n标题：{title}"
             )
 
             resp = requests.post(
